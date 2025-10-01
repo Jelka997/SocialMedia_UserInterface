@@ -47,6 +47,10 @@ function renderData(data) {
     data.forEach((group) => {
       let newRow = document.createElement("tr");
 
+      newRow.addEventListener("click", function () {
+        window.location.href = '../userGroup/userGroup.html?id=' + group['id'];
+      })
+
       let cell1 = document.createElement("td");
       cell1.textContent = group["id"];
       newRow.appendChild(cell1);
