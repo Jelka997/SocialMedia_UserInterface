@@ -1,18 +1,117 @@
-/* Error: expected "{".
- *    ,
- * 39 | <<<<<<< HEAD
- *    |             ^
- *    '
- *   app/styles/_global.scss 39:13  @use
- *   app/index.scss 1:1             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 39 \2502  <<<<<<< HEAD\a    \2502              ^\a    \2575 \a   app/styles/_global.scss 39:13  @use\a   app/index.scss 1:1             root stylesheet';
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+}
+nav .naslov {
+  margin: 0px 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  gap: 10px;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 80px;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: medium;
+  color: black;
+}
+nav ul ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  gap: 10px;
+}
+nav ul ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 80px;
+  text-align: center;
+}
+nav ul ul li a {
+  text-decoration: none;
+  font-size: medium;
+  color: black;
+}
+nav #table-details {
+  padding: 1rem;
+}
+nav #table-details table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+nav #table-details table th,
+nav #table-details table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+nav #table-details table th {
+  background-color: #f7f7f7;
+  color: white;
+}
+nav #table-details table tr:hover {
+  background-color: #f1f1f1;
+}
+nav button {
+  background-color: #f7f7f7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+nav button:hover {
+  background-color: grey;
+}
+nav form {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  text-align: center;
+}
+nav form label,
+nav form p {
+  font-weight: bold;
+}
+nav div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav .hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */
