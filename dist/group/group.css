@@ -11,52 +11,61 @@ nav {
   width: 100%;
   justify-content: space-between;
   background-color: #f7f7f7;
-
-  .naslov {
-    margin: 0px 10px;
-  }
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    width: 40%;
-    gap: 10px;
-    li {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      border: 1px solid black;
-      border-radius: 12px;
-      width: 80px;
-      text-align: center;
-      a {
-        text-decoration: none;
-        font-size: medium;
-        color: black;
-      }
-    }
-  }
+}
+nav .naslov {
+  margin: 0px 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  gap: 10px;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 80px;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: medium;
+  color: black;
 }
 
 #table-details {
   padding: 1rem;
 }
+
 #table-details table {
   width: 50%;
   border-collapse: collapse;
   margin-top: 1rem;
 }
+
 #table-details table th,
 #table-details table td {
   border: 1px solid #ddd;
   padding: 0.5rem;
   text-align: left;
 }
+
 #table-details table th {
   background-color: #4caf50;
   color: white;
 }
+
 #table-details table tr:hover {
   background-color: #f1f1f1;
 }
+
+#groups {
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=group.css.map */

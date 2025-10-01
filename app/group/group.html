@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/group/group.css" />
+    <title>Grupe</title>
+  </head>
+  <body>
+    <nav>
+      <div class="naslov">
+        <h1>Social Media</h1>
+      </div>
+      <ul>
+        <li><a href="../../app/index.html">Pocetna</a></li>
+        <li><a href="../groupForm/groupForm.html">Dodaj grupu</a></li>
+      </ul>
+    </nav>
+
+    <section id="groups">
+      <h2>Grupe</h2>
+      <p id="no-data-message" class="hidden">
+        Nema dostupnih podataka za prikazivanje.
+      </p>
+      <div id="table-details">
+        <table>
+          <thead class="hidden">
+            <tr>
+              <th>Id</th>
+              <th>Ime</th>
+              <th>Datum kreiranja</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="group.js"></script>
+  </body>
+</html>
