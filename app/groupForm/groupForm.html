@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/groupForm/groupForm.css" />
+
+    <title>Dodaj grupu</title>
+  </head>
+  <body>
+    <nav>
+      <div class="naslov">
+        <h1>Social Media</h1>
+      </div>
+      <ul>
+        <li><a href="../../app/index.html">Pocetna</a></li>
+        <li><a href="../group/group.html">Pregled grupa</a></li>
+      </ul>
+    </nav>
+
+    <section id="groups">
+      <form id="form">
+        <label for="name">Naziv:</label>
+        <input id="name" name="name" type="text" />
+        <!-- paragraf za poruku o grešci za naziv -->
+        <span id="nameError"></span>
+        <br />
+      </form>
+      <div class="actions">
+        <button id="submitBtn">Dodaj</button>
+        <button id="cancelBtn">Poništi</button>
+      </div>
+    </section>
+    <script src="groupForm.js"></script>
+  </body>
+</html>
