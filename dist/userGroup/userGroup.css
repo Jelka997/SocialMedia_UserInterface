@@ -114,4 +114,20 @@ nav .hidden {
   display: none;
 }
 
+#table-details {
+  padding: 20px;
+}
+#table-details table {
+  border-collapse: collapse;
+}
+#table-details table td,
+#table-details table th {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=userGroup.css.map */
