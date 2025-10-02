@@ -1,1 +1,17 @@
-@use '../styles/global'
+@use "../styles/global";
+
+#table-details {
+  padding: 20px;
+  table {
+    border-collapse: collapse;
+    td,
+    th {
+      padding: 10px;
+      border: 1px solid gray;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
