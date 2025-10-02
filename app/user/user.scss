@@ -1,1 +1,30 @@
-@use '../styles/global'
+@use '../styles/global';
+
+#table-details {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 1rem;
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            color: black;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    }
+}

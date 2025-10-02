@@ -1,5 +1,5 @@
 function getAll() {
-  fetch("http://localhost:5014/api/groups") // Pravi GET zahtev da dobavi sve grupe sa servera
+  fetch("http://localhost:32307/api/groups") // Pravi GET zahtev da dobavi sve grupe sa servera
     .then((response) => {
       if (!response.ok) {
         // Ako se vrati statusni kod koji nije iz 2xx, tretiraj kao grešku

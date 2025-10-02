@@ -22,7 +22,7 @@ submitBtn.addEventListener("click", function () {
     return;
   }
 
-  fetch("http://localhost:5014/api/groups", {
+  fetch("http://localhost:32307/api/groups", {
     // Pravi POST zahtev da se sačuva grupa
     method: "POST",
     headers: {

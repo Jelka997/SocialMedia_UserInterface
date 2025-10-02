@@ -7,7 +7,7 @@ function get() {
         return
     }
 
-    fetch('http://localhost:5014/api/groups/'+ id + '/users')
+    fetch('http://localhost:32307/api/groups/'+ id + '/users')
         .then(response => {
             if (!response.ok) {
                 // Ako statusni kod nije iz 2xx (npr. 404), kreiramo grešku

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/userForm/userForm.css">
+    <title>Dodavanje i izmena korisnika</title>
+</head>
+
+<body>
+    <nav>
+        <div class="naslov">
+            <h1>Social Media</h1>
+        </div>
+        <ul>
+            <li><a href="../../app/index.html">Pocetna</a></li>
+            <li><a href="../../app/user/user.html">Prikaz Korisnika</a></li>
+        </ul>
+    </nav>
+
+    <div class="forma">
+        <form id="form">
+            <label for="username">Korisnicko ime:</label>
+            <input id="username" name="username" type="text" />
+            <!-- paragraf za poruku o grešci za naziv -->
+            <span id="usernameError"></span>
+            <br />
+
+
+            <label for="name">Ime:</label>
+            <input id="name" name="name" type="text" />
+            <!-- paragraf za poruku o grešci za autora -->
+            <span id="nameError"></span>
+            <br />
+
+            <label for="lastName">Prezime:</label>
+            <input id="lastName" name="lastName" type="text" />
+            <!-- paragraf za poruku o grešci za autora -->
+            <span id="lastNameError"></span>
+            <br />
+
+            <label for="birthday">Datum rodjenja:</label>
+            <input id="birthday" name="birthday" type="date" />
+            <!-- paragraf za poruku o grešci za autora -->
+            <span id="birthdayError"></span>
+            <br />
+            <div class="actions">
+                <button id="submitBtn" type="button">Submit</button>
+                <button id="cancelBtn" type="button">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="userForm.js"></script>
+</body>
+
+</html>

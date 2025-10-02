@@ -1,5 +1,5 @@
 function getAll() {
-  fetch("http://localhost:5014/api/users") // Pravi GET zahtev da dobavi sve grupe sa servera
+  fetch("http://localhost:32307/api/users") // Pravi GET zahtev da dobavi sve grupe sa servera
     .then((response) => {
       if (!response.ok) {
         // Ako se vrati statusni kod koji nije iz 2xx, tretiraj kao grešku
@@ -65,7 +65,6 @@ function renderData(data) {
 
       let cell5 = document.createElement("td");
       let date = new Date(user["birthday"]);
-
       // Formatiramo u dd.mm.yyyy
       let formattedDate = date.toLocaleDateString("sr-RS", {
         day: "2-digit",
@@ -75,6 +74,15 @@ function renderData(data) {
 
       cell5.textContent = formattedDate;
       newRow.appendChild(cell5);
+      // Kreiranje ćelije za dugme "Edit"
+      let cell6 = document.createElement('td')
+      let editButton = document.createElement('button')
+      editButton.textContent = 'Edit'
+      editButton.addEventListener('click', function () {
+        window.location.href = '../userForm/userForm.html?id=' + user['id']
+      })
+      cell6.appendChild(editButton)
+      newRow.appendChild(cell6)
 
       table.appendChild(newRow);
     });
